@@ -11,7 +11,7 @@ DreamOmni2中VLM在ComfyUI中的复现，支持int4,int8量化；配合loras可�
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/your-username/ComfyUI-VLM-Quantized-Prompt.git
-pip install -r ComfyUI-VLM-Quantized-Prompt/requirements.txt  [可选]
+pip install -r ComfyUI-VLM-DreamOmni2/requirements.txt  [可选]
 ```
 
 ### 2、下载 VLM 模型
