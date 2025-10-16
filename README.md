@@ -26,6 +26,6 @@ https://huggingface.co/xiabs/DreamOmni2
 
 ### 4、工作流在example_workflow中
 <img width="2783" height="1662" alt="workflow (1)" src="https://github.com/user-attachments/assets/dbdecf27-a571-4e3c-9c90-01acece2826e" />
-#### gen模式
+gen模式
 <img width="3102" height="1925" alt="workflow (2)" src="https://github.com/user-attachments/assets/fad8b3c6-df67-4163-91a9-88292bb61198" />
-#### edit模式
+edit模式
