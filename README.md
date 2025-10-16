@@ -25,6 +25,7 @@ https://huggingface.co/xiabs/DreamOmni2
 | 生成任务 LoRA    | [pytorch_lora_weights.safetensors (gen)](https://huggingface.co/xiabs/DreamOmni2/resolve/main/gen_lora/pytorch_lora_weights.safetensors)      | `ComfyUI/models/loras/DreamOmni2_gen.safetensors`   |
 
 ### 4、工作流在example_workflow中
+如果你已经安装了nunchaku，还可以使用nunchaku进行模型部分的加速
 <img width="2783" height="1662" alt="workflow (1)" src="https://github.com/user-attachments/assets/dbdecf27-a571-4e3c-9c90-01acece2826e" />
 gen模式
 <img width="3102" height="1925" alt="workflow (2)" src="https://github.com/user-attachments/assets/fad8b3c6-df67-4163-91a9-88292bb61198" />
