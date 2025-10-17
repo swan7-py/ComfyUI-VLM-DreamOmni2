@@ -111,18 +111,30 @@ class VLMImageEditingPrompt:
                 raise Exception("VLM模型加载失败，请检查模型路径")
 
             pil_image_1 = self.tensor_to_pil(image_1)
+            content = []
             content = [{"type": "image", "image": pil_image_1}]
 
             if image_2 is not None:
                 pil_image_2 = self.tensor_to_pil(image_2)
                 content.append({"type": "image", "image": pil_image_2})
 
-            enhanced_instruction = instruction + (" It is editing task." if task_type == "edit" else " It is generation task.")
+            if task_type == "edit":
+                enhanced_instruction = instruction + " It is editing task."
+            else: 
+                enhanced_instruction = instruction + " It is generation task."
+            
+            print(f"{enhanced_instruction}")
+            content.append({"type": "text", "text": enhanced_instruction})
+            
             messages = [{"role": "user", "content": content}]
 
             text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-            image_inputs = [item["image"] for msg in messages for item in msg["content"] if item["type"] == "image"]
+            image_inputs = []
+            for message in messages:
+                for item in message["content"]:
+                    if item["type"] == "image":
+                        image_inputs.append(item["image"])
 
             inputs = self.processor(text=[text], images=image_inputs, padding=True, return_tensors="pt")
             inputs = inputs.to(self.device)
