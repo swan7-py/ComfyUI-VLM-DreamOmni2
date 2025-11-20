@@ -36,7 +36,7 @@ class VLMImageEditingPrompt:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("enhanced_prompt",)
     FUNCTION = "generate_enhanced_prompt"
-    CATEGORY = "DreamOmni2"
+    CATEGORY = "Swan"
     DESCRIPTION = "使用VLM模型根据输入图像和指令生成增强的编辑提示词（支持 fp16/int8/int4 量化）"
 
     def __init__(self):
@@ -166,3 +166,4 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "VLMImageEditingPrompt": "VLMImageEditingPrompt",
 }
+
