@@ -1,0 +1,18 @@
+[project]
+name = "ComfyUI-VLM-DreamOmni2"
+description = "DreamOmni2中VLM在ComfyUI中的复现，支持int4,int8量化；配合loras可完成原项目的复现"
+version = "1.0.1"
+license = {file = "LICENSE"} 
+
+
+
+[project.urls]
+Repository = "https://github.com/swan7-py/ComfyUI-VLM-DreamOmni2"
+#  Used by Comfy Registry https://registry.comfy.org
+
+
+[tool.comfy]
+PublisherId = "swan7-py"
+DisplayName = "ComfyUI-VLM-DreamOmni2"
+Icon = ""
+# "requires-comfyui" = ">=1.0.0"  # ComfyUI version compatibility
