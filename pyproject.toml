@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-VLM-DreamOmni2"
 description = "DreamOmni2中VLM在ComfyUI中的复现，支持int4,int8量化；配合loras可完成原项目的复现"
-version = "1.0.1"
+version = "1.0.2"
 license = {file = "LICENSE"} 
 
 
